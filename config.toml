@@ -1,4 +1,33 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "owowo"
+title = "josh's journey"
 theme = "cactus"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Now"
+url = "/now"
+weight = 4
+
+[params]
+
+colortheme = "dark"
+description = "Site is WIP, but thanks for visiting :)"
+
+[[params.social]]
+name = "github"
+link = "https://github.com/joshtenorio"
