@@ -2,9 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>josh&#39;s journey</title>
-    <link>http://example.org/</link>
+    <link>/</link>
     <description>Recent content on josh&#39;s journey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now</title>
+      <link>/now/</link>
+      <pubDate>Sat, 29 May 2021 00:28:33 -0700</pubDate>
+      
+      <guid>/now/</guid>
+      <description>WIP</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 29 May 2021 00:28:28 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>WIP</description>
+    </item>
+    
   </channel>
 </rss>
