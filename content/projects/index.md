@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date: 2021-05-30T23:19:12-07:00
-draft: true
+draft: false
 ---
 
 # Projects
