@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "josh's journey"
+title = "josh's tech journey"
 theme = "cactus"
 
 publishDir = "public"
@@ -28,7 +28,7 @@ weight = 4
 [params]
 
 colortheme = "dark"
-description = "Site is WIP, but thanks for visiting :)"
+description = "Hi, I'm Josh. Thanks for visiting, and feel free to check out the rest of my website! :)"
 
 [[params.social]]
 name = "github"

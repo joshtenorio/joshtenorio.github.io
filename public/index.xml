@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>josh&#39;s journey</title>
+    <title>josh&#39;s tech journey</title>
     <link>/</link>
-    <description>Recent content on josh&#39;s journey</description>
+    <description>Recent content on josh&#39;s tech journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,8 @@
       <pubDate>Sat, 29 May 2021 00:28:33 -0700</pubDate>
       
       <guid>/now/</guid>
-      <description>WIP</description>
+      <description>What I&amp;rsquo;m doing now This is my now page.
+CanSat I compete with a team of other ASU students to design and build a payload to complete specific objectives in the CanSat Competition. I am a part of the electrical subsystem team, and this year I am primarily responsible for developing the ground station software, which receives telemetry from the container, plots data in real time, and sends commands back to the container.</description>
     </item>
     
     <item>
@@ -21,7 +22,8 @@
       <pubDate>Sat, 29 May 2021 00:28:28 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description>WIP</description>
+      <description>About Me Hi there! My name is Josh, and I&amp;rsquo;m currently studying Computer Science at Arizona State University.
+In my free time I enjoy spending time with friends, competing in various competitions, and watching animes and kdramas that interest me. If you&amp;rsquo;re curious, here is what I am working on now.</description>
     </item>
     
   </channel>
