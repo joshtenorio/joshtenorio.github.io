@@ -5,5 +5,8 @@ draft: false
 ---
 
 # Projects
-(This is where I'll have a list of posts sorted by project in the future.
-This section, and my first few posts, are still WIP :) )
+
+## Monte
+Monte is the C++ StarCraft 2 bot I've been working on. Its code can be found [here](https://github.com/joshtenorio/monte-bot).
+
+- 
