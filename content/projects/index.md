@@ -7,6 +7,4 @@ draft: false
 # Projects
 
 ## Monte
-Monte is the C++ StarCraft 2 bot I've been working on. Its code can be found [here](https://github.com/joshtenorio/monte-bot).
-
-- 
+Monte is a C++ StarCraft 2 bot I've been working on. Its code can be found [here](https://github.com/joshtenorio/monte-bot).
