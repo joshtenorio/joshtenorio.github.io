@@ -6,5 +6,5 @@ draft: false
 
 # Projects
 
-## SC2 Ai Arena
+## SC2 AI Arena
 I'm currently working on a StarCraft II bot named Monte. Its code can be found [here](https://github.com/joshtenorio/monte-bot).
