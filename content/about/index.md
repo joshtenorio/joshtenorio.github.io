@@ -11,4 +11,4 @@ Hi there! My name is Josh, and I'm currently studying Computer Science at Arizon
 In my free time I enjoy spending time with friends, competing in various competitions, and watching animes and kdramas that interest me. If you're curious, [here](/now) is what I am working on now.
 
 # About This Website
-This website was created in May 2021, and is built using [Hugo](https://gohugo.io/) and uses the [Cactus theme](https://github.com/monkeyWzr/hugo-theme-cactus).
+This website was created in May 2021, is built using [Hugo](https://gohugo.io/) and uses the [Cactus theme](https://github.com/monkeyWzr/hugo-theme-cactus).

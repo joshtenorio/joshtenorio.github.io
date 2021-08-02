@@ -37,6 +37,9 @@ weight = 5
 colortheme = "dark"
 description = "Hi, I'm Josh. Thanks for visiting, and feel free to check out the rest of my website! :)"
 
+show_updated = true
+showReadTime = true
+
 [[params.social]]
 name = "github"
 link = "https://github.com/joshtenorio"
