@@ -5,24 +5,14 @@
     <link>/</link>
     <description>Recent content on josh&#39;s tech journey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 01 Aug 2021 19:49:07 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Battlesnakesummer21</title>
-      <link>/posts/battlesnakesummer21/</link>
-      <pubDate>Sun, 01 Aug 2021 19:49:07 -0700</pubDate>
-      
-      <guid>/posts/battlesnakesummer21/</guid>
-      <description>Earlier this summer, I learned of a programming competition called Battlesnake.</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
       <link>/projects/</link>
       <pubDate>Sun, 30 May 2021 23:19:12 -0700</pubDate>
       
       <guid>/projects/</guid>
-      <description>Projects SC2 Ai Arena I&amp;rsquo;m currently working on a StarCraft II bot named Monte. Its code can be found here.</description>
+      <description>Projects SC2 AI Arena I&amp;rsquo;m currently working on a StarCraft II bot named Monte. Its code can be found here.</description>
     </item>
     
     <item>
@@ -32,7 +22,7 @@
       
       <guid>/now/</guid>
       <description>What I&amp;rsquo;m doing now This is my now page.
-CanSat I compete with a team of other ASU students to design and build a payload to complete specific objectives in the CanSat Competition. I am a part of the electrical subsystem team, and this year I am primarily responsible for developing the ground station software, which receives telemetry from the container, plots data in real time, and sends commands back to the container.</description>
+CanSat I compete with a team of other ASU students to design and build a payload to complete specific objectives in the CanSat Competition. I am a part of the electrical subsystem team, and this year I am primarily responsible for developing the ground station software, which receives telemetry from the payload container, plots data in real time, and sends commands back to the container.</description>
     </item>
     
     <item>
