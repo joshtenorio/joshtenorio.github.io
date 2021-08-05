@@ -1,11 +1,11 @@
 ---
 title: "Battlesnake Summer League 2021 Reflections"
-date: 2021-08-01T19:49:07-07:00
-draft: true
+date: 2021-08-04T19:49:07-07:00
+draft: false
 ---
 
 Earlier this summer, I learned of a programming competition called [Battlesnake](https://play.battlesnake.com/).
-Having acquired a lot of free time after the end of my first year of college, I entered a battlesnake into their summer league and took the opportunity to learn Go.
+Having acquired a lot of free time after the end of my first year of college, I entered a battlesnake into their summer league competition and took the opportunity to learn Go.
 
 ![img](/posts/img/battlesnake-su21-0.PNG)
 
@@ -15,10 +15,10 @@ In short:
 - Each snake has a health bar which depletes a little each turn.
 - Health can be replenished by eating food, which also increases the snake's length.
 - If multiple snakes move into the same square, the snake with the longest length survive and the other colliding snakes die.
-If all snakes have equal lengths, then all snakes die.
+If all snakes have equal lengths, then everyone dies.
 
 On the technical side, the game gets the snakes' moves by sending requests to each snake's live web server, which is maintained by the snake's developer.
-Each request contains data about the board state (e.g. where our snake is, where food is, etc.).
+Each request contains data about the board state (e.g. where the snakes are, where food is, etc.).
 Then, the snake's server must send a valid move response to the game within 500 milliseconds.
 This process repeats until the game is finished (i.e. one or no snakes are left).
 
@@ -39,63 +39,59 @@ In order, it checks for:
 3. The path to the closest food
 
 If the snake isn't able to select a move from the above rules, it moves toward the area with the most amount of space.
-By doing so, it can avoid situations where it would get trapped by its own body or other snakes.
+By doing so, it can avoid most situations where it would get trapped by its own body or other snakes.
 
-The end result created a snake which aggressively challenged for food, sometimes to its own detriment.
+The end result created a snake which aggressively challenged for food, even sometimes to its own detriment.
 
 Ninemo's source code can be found [here](https://github.com/joshtenorio/ninemo-bot).
 
 ### Handling head-to-head collisions
-Head to head collisions are possible when our snake's head can potentially move into the same square as another snake.
-The purple squares below represent where an opposing snake's head could be to trigger a head-to-head collision - notice that a snake whose head is in the purple square could potentially move into the same square as our snake.
+Head to head collisions are possible when my snake's head can potentially move into the same square as another snake.
+The purple squares below represent where an opposing snake's head could be to trigger a head-to-head collision - notice that a snake whose head is in the purple square could potentially move into the same square as my snake.
 ![img](/posts/img/battlesnake-su21-2.PNG)
-To detect a possible head-to-head collision, the program compares each of the squared distances from our snake's head to one of its opponents' head.
-If a squared distance is either 1 (the opponent is currently in a square diagonal to our snake) or 2 (the opponent is on the same axis as our snake) then the program caches their position and their length, and disregards the rest of the opponents.
+To detect a possible head-to-head collision, the program compares each of the squared distances from my snake's head to one of its opponents' head.
+If a squared distance is either 1 (the opponent is currently in a square diagonal to it) or 2 (the opponent is on the same axis as it) then the program caches their position and their length, and disregards the rest of the opponents.
 
 Once a possible head-to-head collision has been detected, the next step was to determine both of our future moves.
-After doing so, our snake then determines if it can win the collision.
+After doing so, it then determines if it can win the collision.
 My snake also checks if the move is physically possible, i.e. it won't move into itself, a wall, or another snake's body.
 The pseudocode below demonstrates that logic.
 
-<!---
-should we simplify the pseudocode more so it isnt as long?
--->
-
 ```go
-if ourLength < enemyLength:
+if myLength < enemyLength:
     // snake loses the collision, so select a move that avoids it
-    for each ourMove:
+    for each myMove:
         escape = true
         for each enemyMove:
-            if ourMove == enemyMove or ourMove is not possible:
+            if myMove == enemyMove or myMove is not possible:
                 escape = false
         if escape == true:
-            return ourMove
-else if ourLength > enemyLength:
+            return myMove
+else if myLength > enemyLength:
     // snake wins the collision, select a move that results in it
     // if food is adjacent, move towards it instead
     foodAdjacent, move = api.IsFoodAdjacent() // returns a bool and a move if food is adjacent
     if foodAdjacent:
         return move
-    for each ourMove:
+    for each myMove:
         for each enemyMove:
-            if ourMove == enemyMove and ourMove is possible:
-                return ourMove
+            if myMove == enemyMove and myMove is possible:
+                return myMove
 else:
-    // our lengths are equal
+    // lengths are equal
     // if food is adjacent, move towards it
     // else if food is not adjacent, avoid a collision
     foodAdjacent, move = api.IsFoodAdjacent()
     if foodAdjacent:
         return move
     else:
-        for each ourMove:
+        for each myMove:
             escape = true
             for each enemyMove:
-                if ourMove == enemyMove or ourMove is not possible:
+                if myMove == enemyMove or myMove is not possible:
                     escape = false
             if escape == true:
-                return ourMove
+                return myMove
 
 
 ```
@@ -129,6 +125,9 @@ My snake also tries to avoid moving into traps (i.e. tight spaces) in this step.
 
 If my snake can't determine a move after checking the three rules above, it takes all of its possible moves that doesn't result in moving into a trap, and picks the move that results in moving into the area with the most amount of spaces.
 It does this by using flood fill to count the number of open squares, which is also used to avoid traps while pathing towards food.
+The image below demonstrates how my snake uses flood fill - although turning up would let it eat food and grow longer, because it is a tight space it decides to turn down into the larger space instead.
+
+![img](/posts/img/battlesnake-su21-5.PNG)
 
 ## Performance and Reflection
 
@@ -144,10 +143,7 @@ In contrast, other snakes had a clear plan in mind.
 For instance, one snake would consistently take control of the center, which would often keep other snakes in the hazards once the game got long enough.
 
 Looking forward for fall league, implementing something smarter than "just survive" is one of my goals.
-For instance, I'd like to improve my snake's performance when there are only 2 snakes left on the board, and implementing a tree search algorithm such as Minimax could be beneficial for that goal.
+For instance, I'd like to improve my snake's performance when there are only 2 snakes left on the board, and implementing a tree search algorithm such as Minimax could be beneficial for meeting that goal.
 
-I really enjoyed my time spent learning Go, which is the language I used to create my snake, and I hope to improve my Go skills with another project in the future.
-
-<!-- add more stuff here about how i want to use Go more -->
-
+During the time I spent creating my snake, I really enjoyed learning Go, and hopefully I get another opportunity to use the language and improve my skills.
 
