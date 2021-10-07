@@ -24,7 +24,8 @@ The Competition Battlesnake is a battle royale-esque game where there are initia
       <pubDate>Sun, 30 May 2021 23:19:12 -0700</pubDate>
       
       <guid>/projects/</guid>
-      <description>Projects SC2 AI Arena I&amp;rsquo;m currently working on a StarCraft II bot named Monte. Its code can be found here.</description>
+      <description>Projects SC2 AI Arena I&amp;rsquo;m currently working on a StarCraft II bot named Monte. Its page on SC2 AI Arena can be found here and the code can be found on Github.
+Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament. The code for my bot can be found on Github, and a writeup of its strategy can be found here.</description>
     </item>
     
     <item>
@@ -34,7 +35,7 @@ The Competition Battlesnake is a battle royale-esque game where there are initia
       
       <guid>/now/</guid>
       <description>What I&amp;rsquo;m doing now This is my now page.
-CanSat I compete with a team of other ASU students to design and build a payload to complete specific objectives in the CanSat Competition. I am a part of the electrical subsystem team, and this year I am primarily responsible for developing the ground station software, which receives telemetry from the payload container, plots data in real time, and sends commands back to the container.</description>
+Formula SAE I compete on ASU&amp;rsquo;s Formula SAE team as part of the Data Acquisition subteam, where we are responsible for integrating various sensors into the racecar. This year, I am primarily responsible for developing the data dashboard, which will playback recorded data from the car and plot them into various graphs. For the future, we hope to add telemetry viewing to the dashboard where we can view live data from the racecar as it is running.</description>
     </item>
     
     <item>
@@ -43,7 +44,7 @@ CanSat I compete with a team of other ASU students to design and build a payload
       <pubDate>Sat, 29 May 2021 00:28:28 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description>About Me Hi there! My name is Josh, and I&amp;rsquo;m currently studying Computer Science at Arizona State University.
+      <description>About Me Hi there! My name is Josh, and I&amp;rsquo;m currently studying Computer Science and Mathematics at Arizona State University.
 In my free time I enjoy spending time with friends, competing in various competitions, and watching animes and kdramas that interest me. If you&amp;rsquo;re curious, here is what I am working on now.
 About This Website This website was created in May 2021, is built using Hugo and uses the Cactus theme.</description>
     </item>
