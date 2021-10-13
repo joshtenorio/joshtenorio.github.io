@@ -9,7 +9,7 @@ This is my [now page](https://nownownow.com/about).
 
 ## Formula SAE
 I compete on ASU's Formula SAE team as part of the Data Acquisition subteam, where we are responsible for integrating various sensors into the racecar. 
-This year, I am primarily responsible for developing the data dashboard, which will playback recorded data from the car and plot them into various graphs.
+This year, I am leading the development of our data dashboard, which will playback recorded data from the car and plot them into various graphs.
 For the future, we hope to add telemetry viewing to the dashboard where we can view live data from the racecar as it is running.
 Our code can be found on [Github](https://github.com/sundevilmotorsports).
 
