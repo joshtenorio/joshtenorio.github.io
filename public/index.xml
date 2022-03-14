@@ -24,8 +24,8 @@ The Competition Battlesnake is a battle royale-esque game where there are initia
       <pubDate>Sun, 30 May 2021 23:19:12 -0700</pubDate>
       
       <guid>/projects/</guid>
-      <description>Projects SC2 AI Arena I&amp;rsquo;m currently working on a StarCraft II bot named Monte. Its page on SC2 AI Arena can be found here and the code can be found on Github.
-Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament. The code for my bot can be found on Github, and a writeup of its strategy can be found here.</description>
+      <description>Projects SC2 AI Arena I&amp;rsquo;ve created a C++ bot named Monte to play StarCraft II. Its page on SC2 AI Arena can be found here and the code can be found on GitHub.
+Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament. The code for my bot can be found on GitHub, and a writeup of its strategy can be found here.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed
       
       <guid>/now/</guid>
       <description>What I&amp;rsquo;m doing now This is my now page.
-Formula SAE I compete on ASU&amp;rsquo;s Formula SAE team as part of the Data Acquisition subteam, where we are responsible for integrating various sensors into the racecar. This year, I am leading the development of our data dashboard, which will playback recorded data from the car and plot them into various graphs. For the future, we hope to add telemetry viewing to the dashboard where we can view live data from the racecar as it is running.</description>
+Formula SAE I compete on ASU&amp;rsquo;s Formula SAE team as part of the Data Acquisition subteam, where we are responsible for integrating sensors into a Formula-style race car. Currently we are working on a redesign of our data acquisition system to allow for easy modifications, simpler cable runs, and compiling data from the ECU. Our code can be found on GitHub.</description>
     </item>
     
     <item>

@@ -7,9 +7,9 @@ draft: false
 # Projects
 
 ## SC2 AI Arena
-I'm currently working on a StarCraft II bot named Monte.
-Its page on SC2 AI Arena can be found [here](https://aiarena.net/bots/310/) and the code can be found on [Github](https://github.com/joshtenorio/monte-bot).
+I've created a C++ bot named Monte to play StarCraft II.
+Its page on SC2 AI Arena can be found [here](https://aiarena.net/bots/310/) and the code can be found on [GitHub](https://github.com/joshtenorio/monte-sc2).
 
 ## Battlesnake
 I competed in [Battlesnake's](https://play.battlesnake.com/) Summer League 2021, and placed in the top four in the gold tier tournament.
-The code for my bot can be found on [Github](https://play.battlesnake.com/u/tenmo/ninemo/), and a writeup of its strategy can be found [here](/posts/battlesnakesummer21).
+The code for my bot can be found on [GitHub](https://play.battlesnake.com/u/tenmo/ninemo/), and a writeup of its strategy can be found [here](/posts/battlesnakesummer21).
