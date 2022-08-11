@@ -6,9 +6,13 @@ draft: false
 
 # Projects
 
+## Wayland Compositor
+I'm currently working on a [Wayland compositor](https://github.com/joshtenorio/bluewl) in C.
+
 ## SC2 AI Arena
 I've created a C++ bot named Monte to play StarCraft II.
 Its page on SC2 AI Arena can be found [here](https://aiarena.net/bots/310/) and the code can be found on [GitHub](https://github.com/joshtenorio/monte-sc2).
+During its best season, it was able to achieve a 47% winrate in its division.
 
 ## Battlesnake
 I competed in [Battlesnake's](https://play.battlesnake.com/) Summer League 2021, and placed in the top four in the gold tier tournament.

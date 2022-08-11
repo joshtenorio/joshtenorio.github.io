@@ -24,8 +24,9 @@ The Competition Battlesnake is a battle royale-esque game where there are initia
       <pubDate>Sun, 30 May 2021 23:19:12 -0700</pubDate>
       
       <guid>/projects/</guid>
-      <description>Projects SC2 AI Arena I&amp;rsquo;ve created a C++ bot named Monte to play StarCraft II. Its page on SC2 AI Arena can be found here and the code can be found on GitHub.
-Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament. The code for my bot can be found on GitHub, and a writeup of its strategy can be found here.</description>
+      <description>Projects Wayland Compositor I&amp;rsquo;m currently working on a Wayland compositor in C.
+SC2 AI Arena I&amp;rsquo;ve created a C++ bot named Monte to play StarCraft II. Its page on SC2 AI Arena can be found here and the code can be found on GitHub. During its best season, it was able to achieve a 47% winrate in its division.
+Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament.</description>
     </item>
     
     <item>
@@ -35,7 +36,8 @@ Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed
       
       <guid>/now/</guid>
       <description>What I&amp;rsquo;m doing now This is my now page.
-Formula SAE I compete on ASU&amp;rsquo;s Formula SAE team as part of the Data Acquisition subteam, where we are responsible for integrating sensors into a Formula-style race car. Currently we are working on a redesign of our data acquisition system to allow for easy modifications, simpler cable runs, and compiling data from the ECU. Our code can be found on GitHub.</description>
+Formula SAE I compete on ASU&amp;rsquo;s Formula SAE team as the Data Acquisition team lead, where we are responsible for integrating sensors into a Formula-style race car. Currently we are working on a redesign of our data acquisition system to allow for easy modifications, simpler cable runs, and collecting data from the ECU. Our code can be found on GitHub.
+18x18az I volunteer with 18x18az, a non-profit specializing in hosting high-quality VEX Robotics Competition (VRC) tournaments.</description>
     </item>
     
     <item>
