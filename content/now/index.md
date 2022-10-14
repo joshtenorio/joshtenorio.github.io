@@ -17,8 +17,5 @@ I volunteer with [18x18az](https://18x18az.org), a non-profit specializing in ho
 Most recently, we've successfully hosted both state championships for the 2021-22 season.
 We've also been developing a companion software to Tournament Manager, the program used to run VRC tournaments, to allow us to make custom audience displays and run tournaments more smoothly.
 
-## Wayland Compositor
-I'm currently building a Wayland compositor, [BlueWL](https://github.com/joshtenorio/bluewl), mostly for learning purposes.
-
 ## Arizona State University
 I'm currently in my third year at ASU studying Computer Science and Mathematics, and am expecting to graduate in May 2024.

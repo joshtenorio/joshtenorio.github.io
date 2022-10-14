@@ -15,7 +15,7 @@
       <guid>/posts/battlesnakesummer21/</guid>
       <description>Earlier this summer, I learned of a programming competition called Battlesnake. Having acquired a lot of free time after the end of my first year of college, I entered a battlesnake into their summer league competition and took the opportunity to learn Go.
 The Competition Battlesnake is a battle royale-esque game where there are initially 4 snakes on the board, each controlled autonomously by a developer&amp;rsquo;s program. In short:
- Each snake has a health bar which depletes a little each turn.</description>
+Each snake has a health bar which depletes a little each turn.</description>
     </item>
     
     <item>
@@ -24,9 +24,8 @@ The Competition Battlesnake is a battle royale-esque game where there are initia
       <pubDate>Sun, 30 May 2021 23:19:12 -0700</pubDate>
       
       <guid>/projects/</guid>
-      <description>Projects Wayland Compositor I&amp;rsquo;m currently working on a Wayland compositor in C.
-SC2 AI Arena I&amp;rsquo;ve created a C++ bot named Monte to play StarCraft II. Its page on SC2 AI Arena can be found here and the code can be found on GitHub. During its best season, it was able to achieve a 47% winrate in its division.
-Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament.</description>
+      <description>Projects SC2 AI Arena I&amp;rsquo;ve created a C++ bot named Monte to play StarCraft II. Its page on SC2 AI Arena can be found here and the code can be found on GitHub. During its best season, it was able to achieve a 47% winrate in its division.
+Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament. The code for my bot can be found on GitHub, and a writeup of its strategy can be found here.</description>
     </item>
     
     <item>

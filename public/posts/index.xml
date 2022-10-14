@@ -15,7 +15,7 @@
       <guid>/posts/battlesnakesummer21/</guid>
       <description>Earlier this summer, I learned of a programming competition called Battlesnake. Having acquired a lot of free time after the end of my first year of college, I entered a battlesnake into their summer league competition and took the opportunity to learn Go.
 The Competition Battlesnake is a battle royale-esque game where there are initially 4 snakes on the board, each controlled autonomously by a developer&amp;rsquo;s program. In short:
- Each snake has a health bar which depletes a little each turn.</description>
+Each snake has a health bar which depletes a little each turn.</description>
     </item>
     
   </channel>

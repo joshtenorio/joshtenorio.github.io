@@ -6,9 +6,6 @@ draft: false
 
 # Projects
 
-## Wayland Compositor
-I'm currently working on a [Wayland compositor](https://github.com/joshtenorio/bluewl) in C.
-
 ## SC2 AI Arena
 I've created a C++ bot named Monte to play StarCraft II.
 Its page on SC2 AI Arena can be found [here](https://aiarena.net/bots/310/) and the code can be found on [GitHub](https://github.com/joshtenorio/monte-sc2).
