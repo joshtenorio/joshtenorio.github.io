@@ -34,7 +34,7 @@ Each snake has a health bar which depletes a little each turn.</description>
       
       <guid>/now/</guid>
       <description>What I&amp;rsquo;m doing now This is my now page.
-Formula SAE I compete on Sun Devil Motorsports, ASU&amp;rsquo;s Formula SAE team, as the Data Acquisition team lead, where we are responsible for integrating sensors into a Formula-style race car to validate its design and extract the most performance out of it. Currently we are working on a redesign of our data acquisition system to allow for easy modifications, simpler cable runs, and collecting data from the ECU.</description>
+Formula SAE I compete on Sun Devil Motorsports, ASU&amp;rsquo;s Formula SAE team, as the Data Acquisition team lead, where we are responsible for integrating sensors into a Formula-style race car to validate its design and extract the most performance out of it. Currently we are working on the DAQ design for SDM-24, which includes a redesign of the data logger PCB and software, integrating tire temperature sensors for the first time in the team&amp;rsquo;s history, and improving our IMU embedded software.</description>
     </item>
     
     <item>

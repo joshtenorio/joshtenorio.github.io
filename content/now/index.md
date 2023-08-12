@@ -9,7 +9,7 @@ This is my [now page](https://nownownow.com/about).
 
 ## Formula SAE
 I compete on Sun Devil Motorsports, ASU's Formula SAE team, as the Data Acquisition team lead, where we are responsible for integrating sensors into a Formula-style race car to validate its design and extract the most performance out of it. 
-Currently we are working on a redesign of our data acquisition system to allow for easy modifications, simpler cable runs, and collecting data from the ECU.
+Currently we are working on the DAQ design for SDM-24, which includes a redesign of the data logger PCB and software, integrating tire temperature sensors for the first time in the team's history, and improving our IMU embedded software.
 Our code and PCB designs can be found on [GitHub](https://github.com/sundevilmotorsports) while the team website can be found [here](https://fsae.engineering.asu.edu/).
 
 ## 18x18az
