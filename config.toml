@@ -1,7 +1,8 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "josh's tech journey"
-theme = "cactus"
+theme = ["hugo-embed-pdf-shortcode", "cactus"]
+enableInlineShortcodes = true
 
 publishDir = "public"
 
@@ -43,3 +44,7 @@ showReadTime = true
 [[params.social]]
 name = "github"
 link = "https://github.com/joshtenorio"
+
+[[params.social]]
+name = "linkedin"
+link = "https://www.linkedin.com/in/joshuatenorio/"

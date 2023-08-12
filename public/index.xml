@@ -24,8 +24,7 @@ Each snake has a health bar which depletes a little each turn.</description>
       <pubDate>Sun, 30 May 2021 23:19:12 -0700</pubDate>
       
       <guid>/projects/</guid>
-      <description>Projects SC2 AI Arena I&amp;rsquo;ve created a C++ bot named Monte to play StarCraft II. Its page on SC2 AI Arena can be found here and the code can be found on GitHub. During its best season, it was able to achieve a 47% winrate in its division.
-Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed in the top four in the gold tier tournament. The code for my bot can be found on GitHub, and a writeup of its strategy can be found here.</description>
+      <description>Projects Formula SAE Data Acquisition I&amp;rsquo;m currently leading the design and manufacturing of a data acquistion system for Sun Devil Motorsports, Arizona State&amp;rsquo;s Formula SAE team. This includes (but is not limited to) the PCB and wiring harness design, sensor selection, embedded software, and data processing scripts. Our code and PCB designs can be found on GitHub while the team website can be found here. The design report for the SDM-23 Data Acquisition system can be found on GitHub.</description>
     </item>
     
     <item>
@@ -35,8 +34,7 @@ Battlesnake I competed in Battlesnake&amp;rsquo;s Summer League 2021, and placed
       
       <guid>/now/</guid>
       <description>What I&amp;rsquo;m doing now This is my now page.
-Formula SAE I compete on ASU&amp;rsquo;s Formula SAE team as the Data Acquisition team lead, where we are responsible for integrating sensors into a Formula-style race car. Currently we are working on a redesign of our data acquisition system to allow for easy modifications, simpler cable runs, and collecting data from the ECU. Our code can be found on GitHub.
-18x18az I volunteer with 18x18az, a non-profit specializing in hosting high-quality VEX Robotics Competition (VRC) tournaments.</description>
+Formula SAE I compete on Sun Devil Motorsports, ASU&amp;rsquo;s Formula SAE team, as the Data Acquisition team lead, where we are responsible for integrating sensors into a Formula-style race car to validate its design and extract the most performance out of it. Currently we are working on a redesign of our data acquisition system to allow for easy modifications, simpler cable runs, and collecting data from the ECU.</description>
     </item>
     
     <item>
@@ -46,7 +44,7 @@ Formula SAE I compete on ASU&amp;rsquo;s Formula SAE team as the Data Acquisitio
       
       <guid>/about/</guid>
       <description>About Me Hi there! My name is Josh, and I&amp;rsquo;m currently studying Computer Science and Mathematics at Arizona State University.
-In my free time I enjoy spending time with friends, competing in various competitions, and watching animes and kdramas that interest me. If you&amp;rsquo;re curious, here is what I am working on now.
+In my free time I enjoy spending time with friends, competing in various competitions, and watching kdramas. If you&amp;rsquo;re curious, here is what I am working on now.
 About This Website This website was created in May 2021, is built using Hugo and uses the Cactus theme.</description>
     </item>
     
