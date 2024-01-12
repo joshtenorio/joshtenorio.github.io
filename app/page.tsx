@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { allPosts, Post } from 'contentlayer/generated'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 
 function PostCard(post: Post) {
   return (
@@ -16,7 +17,15 @@ function PostCard(post: Post) {
       <CardContent>
       <p>{post.description}</p>
       </CardContent>
-    </Card></Link>
+      <CardFooter>
+      {post.tags.map((value: string, index: number) => {
+        return (
+          <Badge className='mx-1' key={index}>{value}</Badge>
+        )
+      })}
+      </CardFooter>
+    </Card>
+    </Link>
   )
 }
 

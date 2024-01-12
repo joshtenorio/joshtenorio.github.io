@@ -2,6 +2,7 @@ import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import { Mdx } from '@/components/mdx-components'
 import { Separator } from '@/components/ui/separator'
+import { Badge } from '@/components/ui/badge'
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
@@ -24,7 +25,13 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         <h1 className="text-3xl font-bold">{post.title}</h1>
       </div>
       {post.description}
-      <Separator className='mb-8'/>
+      <br/>
+      {post.tags.map((value: string, index: number) => {
+        return (
+          <Badge className='mx-1' key={index}>{value}</Badge>
+        )
+      })}
+      <Separator className='my-4'/>
       <Mdx code={post.body.code} />
     </article>
   )

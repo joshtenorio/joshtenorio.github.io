@@ -76,9 +76,9 @@ export default function Navbar() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/now" legacyBehavior passHref>
+          <Link href="/posts" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Now
+              Blog
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
