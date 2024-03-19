@@ -14,7 +14,6 @@ function Page() {
       <p className='m-4'>
       {`
       This website is written with Next.js, Tailwind CSS, and shadcn/ui.
-      I am using Contentlayer to manage the blog content.
       `}
       </p>
     </div>

@@ -76,13 +76,6 @@ export default function Navbar() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/posts" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Blog
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
           <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
