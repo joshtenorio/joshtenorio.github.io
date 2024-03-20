@@ -5,7 +5,7 @@ export default function Home() {
       <h1 className="mb-4 text-center text-2xl font-black">
         {`josh's tech journey`}
       </h1>
-      <h2 className="text-xl text-center">Hi, I'm Josh -</h2>
+      <h2 className="text-xl text-center">{"Hi, I'm Josh -"}</h2>
       <p>
         - Software Engineer
       </p>

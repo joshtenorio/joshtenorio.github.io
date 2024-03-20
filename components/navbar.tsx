@@ -6,17 +6,12 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-import { Button } from "./ui/button"
 import { ModeToggle } from "./ui/mode-toggle"
 
 const components: { title: string; href: string; description: string }[] = [
@@ -72,13 +67,6 @@ export default function Navbar() {
           <Link href="/projects" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Projects
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
