@@ -54,7 +54,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function Navbar() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="w-screen flex flex-row justify-between space-x-2">
       <NavigationMenuList>
       <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
@@ -63,15 +63,16 @@ export default function Navbar() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+        {/** 
         <NavigationMenuItem>
           <Link href="/projects" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Projects
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem>*/}
       </NavigationMenuList>
-      <ModeToggle />
+      <div className="grow justify-self-end"><ModeToggle /></div>
     </NavigationMenu>
   )
 }
