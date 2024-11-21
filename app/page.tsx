@@ -1,18 +1,27 @@
 import { Badge } from "@/components/ui/badge";
+import { Card, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-xl py-8">
+    <div className="flex flex-col mx-auto max-w-screen py-8 items-center p-96">
       <h1 className="mb-4 text-center text-2xl font-black">
         {`josh's tech journey`}
       </h1>
       <h2 className="text-xl text-center">{"Hi, I'm Josh -"}</h2>
-      <p className="mb-4">- Software Engineer</p>
-      <p className="text-center mb-4">Please mind the dust while I build this website :)</p>
+      <div className="flex flex-row space-x-2 justify-items-center py-4">
+        <Badge variant="outline">Software Engineer</Badge>
+        <Badge variant="outline">Sim Racer</Badge>
+        <Badge variant="outline">Robot Builder</Badge>
+      </div>
+      <p className="text-center mb-4">
+        Please mind the dust while I build this website :)
+      </p>
       <Separator />
+      {/*
       <div className="flex flex-row flex-wrap space-x-2 space-y-2 p-2">
-        <Badge className="hidden"></Badge> {/** LMAO */}
+        <Badge className="hidden"></Badge>
         <Badge>C/C++</Badge>
         <Badge>TypeScript</Badge>
         <Badge>React</Badge>
@@ -30,6 +39,21 @@ export default function Home() {
         <Badge>SOLIDWORKS</Badge>
         <Badge>MATLAB</Badge>
         </div>
+        */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-6 py-4">
+        <div className="rounded-xl md:col-span-2 md:row-span-2">
+          <Card className="h-full w-full">hello</Card>
+        </div>
+        <div className="rounded-xl md:row-span-2">haha</div>
+        <div className="rounded-xl md:row-span-3 lg:row-span-2"></div>
+        <div className="rounded-xl md:col-span-2"></div>
+        <div className="rounded-xl md:row-span-2 lg:col-span-2"></div>
+        <div className="rounded-xl md:col-span-2"></div>
+        <div className="rounded-xl lg:col-span-2"></div>
+        <div className="rounded-xl md:col-span-3"></div>
+        <div className="rounded-xl lg:col-span-2"></div>
+        <div className="rounded-xl col-span-full lg:col-span-1"></div>
+      </div>
     </div>
-  )
+  );
 }

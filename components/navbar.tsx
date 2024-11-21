@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
 
-import { ModeToggle } from "./ui/mode-toggle"
+import { ModeToggle } from "./ui/mode-toggle";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -50,20 +50,48 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
-]
+];
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="w-screen flex flex-row justify-between space-x-2">
+    <NavigationMenu className="w-screen flex flex-row justify-between space-x-2 py-2">
       <NavigationMenuList>
-      <NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              jxorio.dev
+              <p className="font-bold">jxorio.dev</p>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        {/** 
+        <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Skills/Experience
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Projects
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Resume
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/now" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Now
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        {/**
         <NavigationMenuItem>
           <Link href="/projects" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -72,9 +100,11 @@ export default function Navbar() {
           </Link>
         </NavigationMenuItem>*/}
       </NavigationMenuList>
-      <div className="grow justify-self-end"><ModeToggle /></div>
+      <div className="grow justify-self-end">
+        <ModeToggle />
+      </div>
     </NavigationMenu>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -88,7 +118,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
+            className,
           )}
           {...props}
         >
@@ -99,6 +129,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
