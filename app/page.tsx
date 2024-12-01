@@ -40,20 +40,6 @@ export default function Home() {
         <Badge>MATLAB</Badge>
         </div>
         */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-6 py-4">
-        <div className="rounded-xl md:col-span-2 md:row-span-2">
-          <Card className="h-full w-full">hello</Card>
-        </div>
-        <div className="rounded-xl md:row-span-2">haha</div>
-        <div className="rounded-xl md:row-span-3 lg:row-span-2"></div>
-        <div className="rounded-xl md:col-span-2"></div>
-        <div className="rounded-xl md:row-span-2 lg:col-span-2"></div>
-        <div className="rounded-xl md:col-span-2"></div>
-        <div className="rounded-xl lg:col-span-2"></div>
-        <div className="rounded-xl md:col-span-3"></div>
-        <div className="rounded-xl lg:col-span-2"></div>
-        <div className="rounded-xl col-span-full lg:col-span-1"></div>
-      </div>
     </div>
   );
 }
