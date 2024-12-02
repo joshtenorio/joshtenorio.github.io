@@ -16,9 +16,9 @@ function Page() {
       </div>
       <div className="font-semibold text-xl pt-4">Arizona State</div>
       <div className="text-center">
-        I've just graduated from Arizona State University in May 2024 with a
+        I&apos;ve just graduated from Arizona State University in May 2024 with a
         Bachelors in Computer Science and a Bachelors in Mathematics. There, I
-        was the Data Acquisition team lead for ASU's Formula SAE team Sun Devil
+        was the Data Acquisition team lead for ASU&apos;s Formula SAE team Sun Devil
         Motorsports from Spring 2022 to Spring 2024.
       </div>
       <div className="font-semibold text-xl pt-4">Garmin</div>
