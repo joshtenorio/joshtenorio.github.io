@@ -1,3 +1,4 @@
+import BentoBox from "@/components/bentobox";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";

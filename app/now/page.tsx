@@ -35,7 +35,7 @@ function Page() {
       </div>
       <div className="font-semibold text-xl pt-4">Combat Robotics</div>
       <div className="text-center">
-        I am building an antweight (1-pound) full combat robot with plans to
+        I am building a full combat antweight (1-pound) robot with plans to
         eventually build a beetleweight (3-pound) robot.
       </div>
     </div>
