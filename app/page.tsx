@@ -1,24 +1,20 @@
-import BentoBox from "@/components/bentobox";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Skeleton } from "@/components/ui/skeleton";
 import Link from "next/link";
 import { compareDesc, format, parseISO } from 'date-fns'
 import { allPosts, Post } from 'contentlayer2/generated'
 
 function PostCard(post: Post) {
   return (
-    <div className="mb-8">
-      <h2 className="mb-1 text-xl">
-        <Link href={post.url} className="text-blue-700 hover:text-blue-900 dark:text-blue-400">
+    <div className="flex flex-row my-2 space-x-4">
+      <h2 className="mb-1">
+        <Link href={post.url} className="underline">
           {post.title}
         </Link>
       </h2>
-      <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
+      <time dateTime={post.date} className=" text-gray-600">
         {format(parseISO(post.date), 'LLLL d, yyyy')}
-      </time>
-      <div className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: post.body.html }} />
+      </time> 
     </div>
   )
 }
@@ -62,6 +58,7 @@ export default function Home() {
         <Badge>MATLAB</Badge>
         </div>
         */}
+        <div className="text-xl pt-4">Recent Posts</div>
         {
           posts.map((post, idx) => (
             <PostCard key={idx} {... post} />
