@@ -100,9 +100,11 @@ export default function Navbar() {
           </Link>
         </NavigationMenuItem>*/}
       </NavigationMenuList>
+      {/** 
       <div className="grow justify-self-end">
         <ModeToggle />
       </div>
+      */}
     </NavigationMenu>
   );
 }
