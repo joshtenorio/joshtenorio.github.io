@@ -7,7 +7,7 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     date: { type: "date", required: true },
-    draft: { type: "boolean", required: true },
+    draft: { type: "string", required: true }, // needs to be string for windows compatibility
     tags: { type: "string", required: false },
   },
   computedFields: {

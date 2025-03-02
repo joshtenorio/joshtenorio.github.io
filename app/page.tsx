@@ -5,7 +5,7 @@ import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer2/generated";
 
 function PostCard(post: Post) {
-  if (post.draft && process.env.NODE_ENV == "production") {
+  if (post.draft == "true\r" && process.env.NODE_ENV == "production") {
     return <div></div>;
   }
 
@@ -19,7 +19,7 @@ function PostCard(post: Post) {
       <time dateTime={post.date} className=" text-gray-600">
         {format(parseISO(post.date), "LLLL d, yyyy")}
       </time>
-      {post.draft ? <Badge variant="destructive">Draft</Badge> : <></>}
+      {post.draft == "true\r" ? <Badge variant="destructive">Draft</Badge> : <></>}
     </div>
   );
 }
