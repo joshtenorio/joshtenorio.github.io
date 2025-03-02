@@ -16,7 +16,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug);
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`);
 
-  if (post.draft == "true\r" && process.env.NODE_ENV == "production") {
+  if (post.draft && process.env.NODE_ENV == "production") {
     return <div>Attempting to view a draft post! post not available yet</div>;
   }
   return (
@@ -26,7 +26,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
           {format(parseISO(post.date), "LLLL d, yyyy")}
         </time>
         <h1 className="text-3xl font-bold">{post.title}</h1>
-        {post.draft =="true\r" ? <Badge variant="destructive">Draft</Badge> : <></>}
+        {post.draft ? <Badge variant="destructive">Draft</Badge> : <></>}
       </div>
       <div
         className="[&>*]:mb-3 [&>*:last-child]:mb-0"

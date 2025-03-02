@@ -7,7 +7,7 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     date: { type: "date", required: true },
-    draft: { type: "string", required: true }, // needs to be string for windows compatibility
+    draft: { type: "string", required: false }, // needs to be string for windows compatibility. to not be draft, don't include the thing
     tags: { type: "string", required: false },
   },
   computedFields: {

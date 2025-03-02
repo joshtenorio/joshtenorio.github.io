@@ -1,3 +1,4 @@
+import InlineLink from "@/components/inline-link";
 import Link from "next/link";
 
 function Page() {
@@ -8,12 +9,12 @@ function Page() {
         I&apos;m a software engineer currently living in Chandler, Arizona. My
         hobbies include building combat robots, playing video games, and keeping
         up with Formula 1. Find out what I&apos;m doing{" "}
-        <Link
+        <InlineLink
           href="/now"
-          className="underline text-primary visited:text-secondary"
+          className="underline text-primary visited:text-primary"
         >
           now
-        </Link>
+        </InlineLink>
         .
       </div>
       <div className="text-xl font-semibold pt-4">About This Website</div>
