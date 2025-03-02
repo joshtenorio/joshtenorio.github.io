@@ -3,6 +3,10 @@ import { format, parseISO } from "date-fns";
 import { allPosts } from "contentlayer2/generated";
 import { Badge } from "@/components/ui/badge";
 
+  
+export async function generateStaticParams() {
+  return allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
+}
 
 export const generateMetadata = ({ params }: { params: { slug: string } }) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug);
@@ -35,5 +39,3 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 };
 
 export default PostLayout;
-
-export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
