@@ -92,9 +92,9 @@ export default function Navbar() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/now" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Now
+              About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -107,7 +107,7 @@ export default function Navbar() {
           </Link>
         </NavigationMenuItem>*/}
       </NavigationMenuList>
-      {/** 
+      {/**
       <div className="grow justify-self-end">
         <ModeToggle />
       </div>

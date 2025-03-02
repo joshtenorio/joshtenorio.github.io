@@ -1,10 +1,14 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import { compareDesc, format, parseISO } from 'date-fns'
-import { allPosts, Post } from 'contentlayer2/generated'
+import { compareDesc, format, parseISO } from "date-fns";
+import { allPosts, Post } from "contentlayer2/generated";
 
 function PostCard(post: Post) {
+  if (post.draft && process.env.NODE_ENV == "production") {
+    return <div></div>;
+  }
+
   return (
     <div className="flex flex-row my-2 space-x-4">
       <h2 className="mb-1">
@@ -13,14 +17,17 @@ function PostCard(post: Post) {
         </Link>
       </h2>
       <time dateTime={post.date} className=" text-gray-600">
-        {format(parseISO(post.date), 'LLLL d, yyyy')}
-      </time> 
+        {format(parseISO(post.date), "LLLL d, yyyy")}
+      </time>
+      {post.draft ? <Badge variant="destructive">Draft</Badge> : <></>}
     </div>
-  )
+  );
 }
 
 export default function Home() {
-  const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+  const posts = allPosts.sort((a, b) =>
+    compareDesc(new Date(a.date), new Date(b.date)),
+  );
 
   return (
     <div className="flex flex-col mx-auto max-w-screen py-8 items-center p-96">
@@ -58,12 +65,10 @@ export default function Home() {
         <Badge>MATLAB</Badge>
         </div>
         */}
-        <div className="text-xl pt-4">Recent Posts</div>
-        {
-          posts.map((post, idx) => (
-            <PostCard key={idx} {... post} />
-          ))
-        }
+      <div className="text-xl pt-4">Recent Posts</div>
+      {posts.map((post, idx) => (
+        <PostCard key={idx} {...post} />
+      ))}
     </div>
   );
 }
